@@ -1,0 +1,368 @@
+/* ESTILOS */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-seri;
+
+    background-color: black;
+    background: linear-gradient(-90deg, #6d084b, #410505, #5e419e, #0e613a); /* angulo de animacion y colores */
+    background-size: 400% 400%; /* Aumentamos el tamaño del fondo para que se mueva */
+    animation: gradientBG 15s ease infinite; /* Aplicamos la animación */
+
+    /* max-width: 900px; /* Limita el ancho máximo del contenedor */
+    width: 96%; /*Ocupa el 100% del ancho disponible */
+
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+
+    /*text-align: center; /* Centra el texto horizontalmente */
+    /*width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    /*max-width: 900px; /* Limita el ancho máximo del contenedor */
+    /*padding: 20px; /* Añade espacio interno */
+    /*margin: 20px auto; /* Espacio exterior (arriba/abajo: 20px, izquierda/derecha: auto) */     
+}
+.img {
+    max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.contenedor-tittles {
+    /* Centra el contenedor en el medio de la pagina */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espacio entre el input y el botón */
+    margin: 0 auto; /* Margen superior e inferior, y centrado horizontalmente */
+    max-width: 100%; /* Limita el ancho máximo del contenedor */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    padding: 15px;
+    box-sizing: border-box;
+    
+    color: rgb(24, 2, 2);
+}
+.contenedor-centrado {
+    /* Centra el contenedor en el medio de la pagina */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espacio entre el input y el botón */
+    margin: 0 auto; /* Margen superior e inferior, y centrado horizontalmente */
+    max-width: 100%; /* Limita el ancho máximo del contenedor */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+.contenido:hover { /* Diseño para el contenedor de servivios para streaming*/
+    
+    /* Anamaicon cuando tocan un contenedor*/
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease;
+
+     /* Efecto borroso */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.contenido {
+     /* Centra el contenedor en el medio de la pagina */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+     /* Iluminacion*/
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 100%; /* Limita el ancho máximo del contenedor */
+    padding: 20px; /* Añade espacio interno */
+    margin: 10px auto; /* Espacio exterior (arriba/abajo: 20px, izquierda/derecha: auto) */  
+    box-sizing: border-box; /* Incluye el padding en el ancho total */ 
+}
+#opccionusuario {
+    
+    border: 2px solid #abcab7;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    padding: 3px 12px;
+    text-align: center; /* Centra el texto horizontalmente */
+
+    width: 90%; /* Ocupa el 90% del ancho disponible */
+    max-width: 400px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra los elementos */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+#botonWhatsApp {
+
+    font-family: 'Poppins', sans-ser ;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 4px 6px; /* controlar el tamaño del boton*/
+    background-color: #25D366; /* Color de WhatsApp */
+    color: black;
+    border: 1px solid white; /* Añadí un borde para mejor visibilidad */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex; /* Usar Flexbox */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 12px; /* Espacio entre la imagen y el texto */
+
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    width: 90%; /* Ocupa el 90% del ancho disponible */
+    max-width: 400px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra los elementos */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+.inicio {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: 820;
+    
+     /* Efecto borroso */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+
+    /* Iluminacion*/
+    box-shadow: 0 0 25px rgba(216, 231, 9, 0.959);
+
+    max-width: 100%; /* Limita el ancho máximo del contenedor */
+    width: 100%;
+    /*margin: 10px auto;*/
+
+    text-align: center; /* Centra el texto horizontalmente */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+.redes {
+    background: #2e3126;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    /*align-items: center;  Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espacio entre el input y el botón */
+    margin: 0 auto; /* Margen superior e inferior, y centrado horizontalmente */
+    max-width: 90%; /* Limita el ancho máximo del contenedor */
+    width: 90%; /* Ocupa el 100% del ancho disponible */
+    /*padding: 10px;*/
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+.redes-png:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+.redes-png{
+    width: 47px;
+}
+.wapp {
+    width: 25px;
+    height: auto;
+}
+.ing {
+    width: 20px;
+}
+.sub1 {
+    color: gold;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+.sub2 {
+    color: whitesmoke;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+h4 {
+    color: whitesmoke;
+}
+h5 {
+    color: whitesmoke;
+}
+.escriwapp {
+    font-weight: 406;
+    color: yellow;
+}
+
+.netflix {
+    color: rgb(214, 4, 4);
+    /* padding: 10px;   */
+}
+.netpng {
+    width: 210px;
+    height: 70px;
+    
+}
+
+.amazon {
+    color: rgb(47, 161, 236);
+}
+.amapng {
+    width: 230px;
+    height: 80px;
+}
+
+.hbo {
+    color: blueviolet;
+}
+.hbopng {
+    width: 200px;
+    height: 70px;
+}
+
+.spo {
+    color: rgb(77, 204, 77);
+}
+.spopng {
+    width: 225px;
+    height: 90px;
+}
+
+.disney {
+    color: rgb(144, 219, 219);
+}
+.dispng {
+    width: 190px;
+    
+}
+
+.youtube {
+    color: rgb(241, 2, 2);
+}
+.youpng {
+    width: 200px;
+    height: 80px;
+}
+
+.crunchyroll {
+    color: rgb(235, 156, 11);
+}
+.crupng {
+    width: 140px;
+}
+
+.paramount {
+    color: rgb(2, 82, 255);
+}
+.parapng {
+    width: 200px;
+}
+.info {
+    color: rgb(255, 153, 0);
+}
+p {
+    color: whitesmoke;
+}
+.creditos {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    /*align-items: center;  Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    margin: 0 auto; /* Margen superior e inferior, y centrado horizontalmente */
+    max-width: 90%; /* Limita el ancho máximo del contenedor */
+    width: 90%; /* Ocupa el 100% del ancho disponible */ 
+    padding: 20px;
+    /*padding: 10px;*/
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/*********************** Funciones que interactuan con la logíca de JavaScript***************************/
+.preciosspo {
+    display: none; /* Inicialmente ocultos */
+}
+.preciosdis {
+    display: none;
+}
+.preciosyou {
+    display: none;
+}
+.preciosnet {
+    display: none;
+}
+/* Medida para celulares modernos con buena resolucion*/
+@media (max-width: 720px) {
+    .body, .contenedor-tittles, .contenedor-centrado, .contenido, .inicio, .redes, .creditos {
+        max-width: 96%; /* Reducimos el ancho máximo */
+        width: 96%; /* Ocupa el 100% del ancho en móviles */
+        padding: 12px; /* Reducimos el padding */
+        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+        
+    }
+
+    #opccionusuario, #botonWhatsApp {
+        width: 90%; /* Ocupa el 100% del ancho en móviles */
+        max-width: 90%; /* Sin límite de ancho */
+        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+    }
+
+    h1 {
+        font-size: 1.3rem; /* Reducimos más el tamaño del título */
+    }
+    h2 {
+        font-size: 1.0rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 0.8rem; /* Reducimos el tamaño del texto */
+    }
+}
+
+/* Media query para móviles mas pequeños */
+@media (max-width: 320px) {
+    .body, .contenedor-tittles, .contenedor-centrado, .contenido, .inicio, .redes, .creditos {
+        max-width: 96%; /* Ocupa todo el ancho disponible */
+        width: 96%; /* Ocupa el 100% del ancho en móviles */
+        padding: 10px; /* Reducimos aún más el padding */
+        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+        
+    }
+
+    #opccionusuario, #botonWhatsApp {
+        width: 90%; /* Ocupa el 100% del ancho en móviles */
+        max-width: 90%; /* Sin límite de ancho */
+        overflow-x: hidden; /* Oculta el desplazamiento horizontal */
+        box-sizing: border-box; /* Incluye el padding en el ancho total */
+    }
+
+    h1 {
+        font-size: 1.3rem; /* Reducimos más el tamaño del título */
+    }
+    h2 {
+        font-size: 1.0rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 0.8rem; /* Reducimos el tamaño del texto */
+    }
+}
